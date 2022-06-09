@@ -10397,6 +10397,13 @@ main .btn-more:hover {
 .footer_top .footer_list ul li a:hover {
   color: #0282F9;
 }
+.footer_top p {
+  color: #959595;
+}
+.footer_top p a {
+  color: #0282F9;
+  text-decoration: none;
+}
 
 .footer_bottom {
   background-color: #303030;

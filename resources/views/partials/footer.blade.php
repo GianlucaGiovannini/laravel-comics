@@ -112,35 +112,43 @@
                     </div>
                 </div>
             </div>
+            <div class="copyright pb-4">
+                <p class="m-0">
+                    All Site Content TM and &copy; 2020 DC Entertainment, unless otherwise
+                    <a href="#">noted here</a>.
+                    All right Reserved
+                </p>
+                <a href="#">Cookies Settings</a>
+            </div>
         </div>
     </div>
 
     <div class="footer_bottom">
-            <div class="container py-3">
-                <div class="row row-cols-2 justify-content-around">
-                    <div class="col">
-                        <button class="btn_footer text-uppercase">Sign-up now!</button>
-                    </div>
-                    <div class="col d-flex gap-3 justify-content-end align-items-center">
-                        <div class="text-uppercase follow_us">Follow us</div>
-                        <a href="#">
-                            <img src="{{asset('img/footer-facebook.png')}}">
-                        </a>
-                        <a href="#">
-                            <img src="{{asset('img/footer-twitter.png')}}">
-                        </a>                       
-                        <a href="#">
-                            <img src="{{asset('img/footer-youtube.png')}}">
-                        </a>                       
-                        <a href="#">
-                            <img src="{{asset('img/footer-pinterest.png')}}">
-                        </a>           
-                        <a href="#">
-                            <img src="{{asset('img/footer-periscope.png')}}">
-                        </a>     
-                    </div>
+        <div class="container py-3">
+            <div class="row row-cols-2 justify-content-around">
+                <div class="col">
+                    <button class="btn_footer text-uppercase">Sign-up now!</button>
+                </div>
+                <div class="col d-flex gap-3 justify-content-end align-items-center">
+                    <div class="text-uppercase follow_us">Follow us</div>
+                    <a href="#">
+                        <img src="{{asset('img/footer-facebook.png')}}">
+                    </a>
+                    <a href="#">
+                        <img src="{{asset('img/footer-twitter.png')}}">
+                    </a>
+                    <a href="#">
+                        <img src="{{asset('img/footer-youtube.png')}}">
+                    </a>
+                    <a href="#">
+                        <img src="{{asset('img/footer-pinterest.png')}}">
+                    </a>
+                    <a href="#">
+                        <img src="{{asset('img/footer-periscope.png')}}">
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
 
 </footer>
