@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $series = config('db');
+   /*  dd($series); */
+    return view('home', compact('series'));
 })->name('home');

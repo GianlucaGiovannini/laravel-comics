@@ -10266,6 +10266,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
 nav a {
   font-size: 0.85rem;
   font-weight: 600;
@@ -10289,4 +10299,126 @@ nav a:hover {
   background-position: top center;
   background-size: cover;
   height: 40vh;
+}
+
+main {
+  background-color: #1C1C1C;
+}
+main .current_series {
+  font-size: 1.4rem;
+  background-color: #0282F9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, -50%);
+}
+main .btn-more {
+  background-color: #0282F9;
+  transition: 0.5s;
+}
+main .btn-more:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px 0 #673ab7;
+}
+
+.row .col .series_img {
+  height: 200px;
+}
+.row .col .series_img img {
+  max-height: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.row .col .category {
+  font-size: 0.85rem;
+}
+.row .col:hover {
+  color: #0282F9;
+}
+
+.merc_banner {
+  background-color: #0282F9;
+  z-index: 1;
+}
+.merc_banner img {
+  width: auto;
+  max-height: 55px;
+  z-index: 1;
+}
+.merc_banner a {
+  color: #EFFFFE;
+  text-decoration: none;
+  z-index: 1;
+  transition: 0.5s;
+}
+.merc_banner a span {
+  font-size: 0.8rem;
+  z-index: 1;
+}
+.merc_banner a:hover {
+  color: black;
+  transform: scale(1.2);
+}
+.merc_banner a:hover img {
+  transform: scale(1.2);
+}
+.merc_banner .last_img {
+  padding-top: 0.3rem;
+  width: 70px;
+}
+
+.footer_top {
+  background-image: url("../img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer_top .container {
+  background-image: url(../img/dc-logo-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.footer_top .container .m_t_negativo {
+  margin-top: -100px;
+}
+.footer_top .footer_list ul {
+  list-style: none;
+  padding: 0;
+}
+.footer_top .footer_list ul li {
+  padding: 0.2rem 0;
+}
+.footer_top .footer_list ul li a {
+  color: #959595;
+  text-decoration: none;
+}
+.footer_top .footer_list ul li a:hover {
+  color: #0282F9;
+}
+
+.footer_bottom {
+  background-color: #303030;
+  z-index: 1;
+}
+.footer_bottom .btn_footer {
+  color: white;
+}
+.footer_bottom .btn_footer:hover {
+  box-shadow: inset 0 0 20px 0px #0282F9;
+}
+.footer_bottom .follow_us {
+  color: #0282F9;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+.footer_bottom a:hover {
+  transform: scale(1.3);
+}
+.footer_bottom button {
+  background-color: transparent;
+  border: 2px solid #0282F9;
+  padding: 0.7rem;
+  transition: 0.5s;
 }
