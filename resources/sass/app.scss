@@ -30,14 +30,14 @@ img {
 
 nav {
     img {
-        height: 80px;
+        height: 70px;
     }
     a {
         font-size: 0.85rem;
         font-weight: 600;
         color: #464646;
         display: inline-block;
-        padding: 2.8rem 0;
+        padding: 1.8rem 0;
         border-bottom: 7px solid transparent;
         text-decoration: none;
         &.active {
@@ -53,6 +53,7 @@ nav {
         width: 120px;
         height: 18px;
         padding: 0 25px 4px 0;
+        margin-left: 2rem;
         border-top: 0;
         border-right: 0;
         border-left: 0;
@@ -183,6 +184,10 @@ main {
             color: #0282F9;
             text-decoration: none;
         }
+    }
+    .cookies {
+        color: #0282F9;
+        text-decoration: none;
     }
 }
 

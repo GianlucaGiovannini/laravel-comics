@@ -115,10 +115,10 @@
             <div class="copyright pb-4">
                 <p class="m-0">
                     All Site Content TM and &copy; 2020 DC Entertainment, unless otherwise
-                    <a href="#">noted here</a>.
+                    <a class="cookies" href="#">noted here</a>.
                     All right Reserved
                 </p>
-                <a href="#">Cookies Settings</a>
+                <a class="cookies" href="#">Cookies Settings</a>
             </div>
         </div>
     </div>
