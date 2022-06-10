@@ -10280,6 +10280,26 @@ img {
   max-width: 100%;
 }
 
+.b_bottom_gray {
+  border-bottom: 1px solid #9f9f9f;
+}
+
+.b_top_gray {
+  border-top: 1px solid #9f9f9f;
+}
+
+.b_left_gray {
+  border-left: 1px solid #9f9f9f;
+}
+
+.b_right_gray {
+  border-right: 1px solid #9f9f9f;
+}
+
+.color_custom {
+  color: #00a9d9;
+}
+
 .header_banner {
   background-color: #0282F9;
   color: white;
@@ -10374,10 +10394,10 @@ main .main_section .btn-more:hover {
   box-shadow: 0 0 20px 0 #673ab7;
 }
 
-.row .col .series_img {
+.row .col.series .series_img {
   height: 200px;
 }
-.row .col .series_img img {
+.row .col.series .series_img img {
   max-height: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
@@ -10385,10 +10405,10 @@ main .main_section .btn-more:hover {
   -o-object-position: top;
      object-position: top;
 }
-.row .col .category {
+.row .col.series .category {
   font-size: 0.85rem;
 }
-.row .col:hover {
+.row .col.series:hover {
   color: #0282F9;
 }
 
@@ -10539,4 +10559,29 @@ main .main_section .btn-more:hover {
   text-align: right;
   text-transform: uppercase;
   color: #464646;
+}
+.single_serie .specifics {
+  background-color: #f6f6f6;
+}
+.single_serie .specifics .art,
+.single_serie .specifics .write {
+  font-size: 0.7rem;
+  display: flex;
+}
+.single_serie .specifics .art_by {
+  width: 300px;
+}
+.single_serie .specifics .write_by {
+  width: 342px;
+}
+.single_serie .specifics .specs {
+  font-size: 0.7rem;
+}
+.single_serie .banner_specifics {
+  color: #9f9f9f;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.single_serie .banner_specifics img {
+  height: 60px;
 }

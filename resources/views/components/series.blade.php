@@ -7,7 +7,7 @@
 
             @forelse ($series as  $index => $serie)
             <a href="{{Route('components.single_serie', $index)}}">
-                <div class="col">
+                <div class="col series">
                     <div class="series_img">
                         <img src="{{ $serie['thumb'] }}">
                     </div>
@@ -16,7 +16,7 @@
                     </div>
                 </div>
                 @empty
-                <div class="col">
+                <div class="col series">
                     <p>Nessuna serie da mostrare</p>
                 </div>
             </a>
