@@ -1,5 +1,11 @@
 //
 @use 'bootstrap';
+$primaryColor: #0282F9;
+$navTextColor: #464646;
+$mainBgColor: #1C1C1C;
+$bannerTextColor: #EFFFFE;
+$footerTextLi: #959595;
+$footerBanner: #303030;
 * {
     padding: 0;
     margin: 0;
@@ -11,13 +17,13 @@ img {
 }
 
 .header_banner {
-    background-color: #0282F9;
+    background-color: $primaryColor;
     color: white;
     text-transform: uppercase;
 }
 
 .header_banner {
-    background-color: #0282F9;
+    background-color: $primaryColor;
     text-transform: uppercase;
     a {
         font-size: 0.7rem;
@@ -32,20 +38,27 @@ nav {
     img {
         height: 70px;
     }
-    a {
+    a.menu {
         font-size: 0.85rem;
         font-weight: 600;
-        color: #464646;
+        color: $navTextColor;
         display: inline-block;
         padding: 1.8rem 0;
         border-bottom: 7px solid transparent;
         text-decoration: none;
         &.active {
-            color: #0282F9;
+            color: $primaryColor;
         }
         &:hover {
-            color: #0282F9;
-            border-bottom: 7px solid #0282F9;
+            color: $primaryColor;
+            border-bottom: 7px solid $primaryColor;
+        }
+    }
+    a.logo {
+        padding: 0;
+        &:hover {
+            color: transparent;
+            border-bottom: 0px solid trasparent;
         }
     }
     input {
@@ -57,8 +70,8 @@ nav {
         border-top: 0;
         border-right: 0;
         border-left: 0;
-        border-bottom-color: #0282f9;
-        caret-color: #0282F9;
+        border-bottom-color: $primaryColor;
+        caret-color: $primaryColor;
         &:focus-visible {
             outline: 0;
         }
@@ -80,21 +93,23 @@ nav {
 }
 
 main {
-    background-color: #1C1C1C;
-    .current_series {
-        font-size: 1.4rem;
-        background-color: #0282F9;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(0, -50%);
-    }
-    .btn-more {
-        background-color: #0282F9;
-        transition: 0.5s;
-        &:hover {
-            transform: scale(1.2);
-            box-shadow: 0 0 20px 0 #673ab7;
+    .main_section {
+        background-color: $mainBgColor;
+        .current_series {
+            font-size: 1.4rem;
+            background-color: $primaryColor;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(0, -50%);
+        }
+        .btn-more {
+            background-color: $primaryColor;
+            transition: 0.5s;
+            &:hover {
+                transform: scale(1.2);
+                box-shadow: 0 0 20px 0 #673ab7;
+            }
         }
     }
 }
@@ -114,13 +129,13 @@ main {
             font-size: 0.85rem
         }
         &:hover {
-            color: #0282F9;
+            color: $primaryColor;
         }
     }
 }
 
 .merc_banner {
-    background-color: #0282F9;
+    background-color: $primaryColor;
     z-index: 1;
     img {
         width: auto;
@@ -128,7 +143,7 @@ main {
         z-index: 1;
     }
     a {
-        color: #EFFFFE;
+        color: $bannerTextColor;
         text-decoration: none;
         z-index: 1;
         transition: 0.5s;
@@ -169,39 +184,39 @@ main {
             li {
                 padding: 0.2rem 0;
                 a {
-                    color: #959595;
+                    color: $footerTextLi;
                     text-decoration: none;
                     &:hover {
-                        color: #0282F9;
+                        color: $primaryColor;
                     }
                 }
             }
         }
     }
     p {
-        color: #959595;
+        color: $footerTextLi;
         a {
-            color: #0282F9;
+            color: $primaryColor;
             text-decoration: none;
         }
     }
     .cookies {
-        color: #0282F9;
+        color: $primaryColor;
         text-decoration: none;
     }
 }
 
 .footer_bottom {
-    background-color: #303030;
+    background-color: $footerBanner;
     z-index: 1;
     .btn_footer {
         color: white;
         &:hover {
-            box-shadow: inset 0 0 20px 0px #0282F9;
+            box-shadow: inset 0 0 20px 0px $primaryColor;
         }
     }
     .follow_us {
-        color: #0282F9;
+        color: $primaryColor;
         font-weight: bold;
         margin-right: 1rem;
     }
@@ -212,8 +227,33 @@ main {
     }
     button {
         background-color: transparent;
-        border: 2px solid #0282F9;
+        border: 2px solid $primaryColor;
         padding: 0.7rem;
         transition: 0.5s;
+    }
+}
+
+.banner_single_serie {
+    height: 80px;
+    background-color: $primaryColor;
+    .img_container {
+        position: absolute;
+        bottom: -60px;
+        left: 0;
+        border: 1px solid white;
+        img {
+            height: 240px
+        }
+        .gallery {
+            font-size: 0.8rem;
+            text-align: center;
+            color: white;
+            background-color: #00a9d9;
+            cursor: pointer;
+            &:hover {
+                color: $primaryColor;
+                background-color: $bannerTextColor;
+            }
+        }
     }
 }

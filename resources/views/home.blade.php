@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('page-title')
+    Comics
+@endsection
+
 @section('content')
 
     @include('components.jumbotron')
