@@ -7,7 +7,7 @@
         @forelse ($series as $serie)
         <div class="col">
             <div class="series_img">
-                <img src="{{$serie['thumb']}}">
+                <img src="{{ $serie['thumb'] }}">
             </div>
             <div class="category text-uppercase py-3">
                 {{$serie['series']}}
