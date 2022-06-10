@@ -5,19 +5,21 @@
         </div>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-6 px-2 py-3 g-4 text-center text-sm-start">
 
-            @forelse ($series as $serie)
-            <div class="col">
-                <div class="series_img">
-                    <img src="{{ $serie['thumb'] }}">
+            @forelse ($series as  $index => $serie)
+            <a href="{{Route('components.single_serie', $index)}}">
+                <div class="col">
+                    <div class="series_img">
+                        <img src="{{ $serie['thumb'] }}">
+                    </div>
+                    <div class="category text-uppercase py-3">
+                        {{$serie['series']}}
+                    </div>
                 </div>
-                <div class="category text-uppercase py-3">
-                    {{$serie['series']}}
+                @empty
+                <div class="col">
+                    <p>Nessuna serie da mostrare</p>
                 </div>
-            </div>
-            @empty
-            <div class="col">
-                <p>Nessuna serie da mostrare</p>
-            </div>
+            </a>
 
             @endforelse
         </div>
