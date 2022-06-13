@@ -140,9 +140,6 @@ main {
 
 .row {
     .col.series {
-        a {
-            color: white;
-        }
         .series_img {
             height: 200px;
             img {
@@ -153,7 +150,8 @@ main {
             }
         }
         .category {
-            font-size: 0.85rem
+            font-size: 0.85rem;
+            color: white;
         }
         &:hover {
             color: $primaryColor;

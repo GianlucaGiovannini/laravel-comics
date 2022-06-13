@@ -10394,9 +10394,6 @@ main .main_section .btn-more:hover {
   box-shadow: 0 0 20px 0 #673ab7;
 }
 
-.row .col.series a {
-  color: white;
-}
 .row .col.series .series_img {
   height: 200px;
 }
@@ -10410,6 +10407,7 @@ main .main_section .btn-more:hover {
 }
 .row .col.series .category {
   font-size: 0.85rem;
+  color: white;
 }
 .row .col.series:hover {
   color: #0282F9;
