@@ -59,6 +59,7 @@
     <div class="specifics pt-4">
         <div class="container pb-5">
             <div class="row row-cols-1 row-cols-md-2">
+                
                 <div class="col talent">
                     <h3 class="pb-3 b_bottom_gray">Talent</h3>
 
@@ -141,7 +142,6 @@
                             </div>
                         </div>
                     </div>
-
 
                 </div>
 

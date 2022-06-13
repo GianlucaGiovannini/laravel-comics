@@ -18,7 +18,7 @@
                     <a href="#" class="text-uppercase menu">
                         character
                     </a>
-                    <a href="#" class="text-uppercase menu">
+                    <a href="{{route('home')}}" class="text-uppercase menu {{Route::currentRouteName() === 'home' || Route::currentRouteName() === 'components.single_serie' ? 'active' : '' }} ">
                         comics
                     </a>
                     <a href="#" class="text-uppercase menu">
