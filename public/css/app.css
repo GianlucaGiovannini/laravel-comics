@@ -10332,6 +10332,7 @@ nav a.menu {
 }
 nav a.menu.active {
   color: #0282F9;
+  border-bottom: 7px solid #0282F9;
 }
 nav a.menu:hover {
   color: #0282F9;
