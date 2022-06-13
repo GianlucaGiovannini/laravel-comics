@@ -70,6 +70,9 @@
                         <div class="artist">
                             @forelse($serie['artists'] as $artist)
                             <span class="color_custom">{{$artist}}</span>
+                            @if(!$loop->last)
+                            ,
+                            @endif
                             @empty
                             <span>Non ci sono artisti da mostrare</span>
                             @endforelse
@@ -85,6 +88,9 @@
                         <div class="writer">
                             @forelse($serie['writers'] as $writer)
                             <span class="color_custom">{{$writer}}</span>
+                            @if(!$loop->last)
+                            ,
+                            @endif
                             @empty
                             <span>Non ci sono scrittori da mostrare</span>
                             @endforelse
