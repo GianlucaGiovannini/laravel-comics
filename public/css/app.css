@@ -10394,6 +10394,9 @@ main .main_section .btn-more:hover {
   box-shadow: 0 0 20px 0 #673ab7;
 }
 
+.row .col.series a {
+  color: white;
+}
 .row .col.series .series_img {
   height: 200px;
 }
