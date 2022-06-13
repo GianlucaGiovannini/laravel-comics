@@ -69,7 +69,7 @@
 
                         <div class="artist">
                             @forelse($serie['artists'] as $artist)
-                            <span class="color_custom text-uppercase">{{$artist}}</span>
+                            <span class="color_custom">{{$artist}}</span>
                             @empty
                             <span>Non ci sono artisti da mostrare</span>
                             @endforelse
@@ -103,7 +103,7 @@
                                 <div class="col-4 p-0">
                                     Serie:
                                 </div>
-                                <div class="col-8 p-0 color_custom">
+                                <div class="col-8 p-0 color_custom text-uppercase">
                                     {{$serie['series']}}
                                 </div>
                             </div>
