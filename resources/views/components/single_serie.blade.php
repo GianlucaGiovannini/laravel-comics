@@ -136,7 +136,7 @@
                                     On Sale Date.:
                                 </div>
                                 <div class="col-8 p-0">
-                                    {{$serie['sale_date']}}
+                                    {{date_format(date_create_from_format("Y-m-d", $serie['sale_date']), "M d Y")}}
                                 </div>
                             </div>
                         </div>
