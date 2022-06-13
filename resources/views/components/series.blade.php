@@ -15,12 +15,11 @@
                         {{$serie['series']}}
                     </div>
                 </div>
-                @empty
+            </a>
+            @empty
                 <div class="col series">
                     <p>Nessuna serie da mostrare</p>
                 </div>
-            </a>
-
             @endforelse
         </div>
         <div class="more text-center">
